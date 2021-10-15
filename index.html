@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -18,14 +19,14 @@
     <title>Onda Fit</title>
 </head>
 
-<body>
+<body id="body">
     <header>
         <h1>
             Onda Fit
         </h1>
         <nav id="nav">
             <ul id="open-close">
-                <li class="open"><a href="#nav">Abrir</a></li>
+                <li class="open"><a href="#body">Abrir</a></li>
                 <li class="close"><a href="#">Cerrar</a></li>
             </ul>
             <ul id="menu">
@@ -59,10 +60,40 @@
             <source media="(min-width: 480px)" srcset="res/banner-2-tablet.jpg">
             <img src="res/banner-2.jpg" alt="La foto">
         </picture>
-        <button><a href="#about">Ver más</a></button>
+        <a href="#about" id="see-more">Ver más</a>
         <ul>
             <li id="next"><a href="#gallery">siguiente</a></li>
             <li id="previous"><a href="#">anterior</a></li>
+        </ul>
+    </section>
+
+    <section id="about">
+        <h2>¿Por qué hacer deporte?</h2>
+        <ul>
+            <li>
+
+                <h3>Salud cardíaca</h3>
+                <p>
+                    El ejercicio reduce la presión arterial, eleva el colesterol-HDL (colesterol bueno), reduce los
+                    triglicéridos y mejora los lípidos en sangre
+                </p>
+
+            </li>
+
+            <li id="sueno">
+                <h3>Sueño reparador</h3>
+                <p>
+                    Al empezar a hacer ejercicio de manera regular, probablemente tambien corregirás tu rutina de sueño. El ejercicio puede ayudarte a dormir mejor y mas tiempo
+                </p>
+
+            </li>
+
+            <li>
+                <h3>Menos estrés</h3>
+                <p>
+                    El ejercicio te ayudará a despejar la mente y aliviar el estrés
+                </p>
+            </li>
         </ul>
     </section>
 </body>
