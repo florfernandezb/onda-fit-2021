@@ -24,6 +24,13 @@ h1 {
     height: 53px;
 }
 
+h2 {
+    font-size: 1.2em;
+}
+
+/* ****************************************** GENERAL ****************************************** */
+
+/* ****************************************** NAV ****************************************** */
 #nav a {
     color: #2B2D42;
 }
@@ -38,7 +45,7 @@ h1 {
     background: no-repeat url(res/menu.png);
     background-size: cover;
     display: block;
-    margin: calc(63px / 2 - 15px) 20px;
+    margin: calc(63px / 2 - 15px);
     width: 30px;
     height: 30px;
     font-size: 0;
@@ -57,24 +64,26 @@ h1 {
 }
 
 #nav:target #menu {
-    display: block;
+    position: absolute;
+    top: 70px;
+    padding: 1em;
     width: 100%;
     text-align: center;
+    background-color: #FF5714;
+    z-index: 100;
+    transition: top 0.5s linear;
 }
 
 #menu {
     position: absolute;
-    top: 63px;
-    padding: 1em;
-    background-color: #FF5714;
-    z-index: 100;
-    display: none;
+    top: -100%;
 }
 
 #menu a{
     color: #F8F4F9;
-    line-height: 4em;
+    line-height: 4.5em;
 }
+/* ****************************************** NAV ****************************************** */
 
 /* ****************************************** GALLERY ****************************************** */
 
@@ -99,7 +108,7 @@ h1 {
     background: url(res/blueCircleDark.png) no-repeat;
 }
 
-img {
+#gallery img {
     max-width: 100%;
 }
 
@@ -138,7 +147,7 @@ img {
     display: none;
 }
 
-h2 {
+#gallery h2 {
     font-family: 'Krona One', sans-serif;
     width: 200px;
     left: 2em;
@@ -146,7 +155,7 @@ h2 {
     top: calc(63px + 300px / 2 - 24px - 85px);
 }
 
-button {
+#gallery button {
     position: absolute;
     top: calc(63px + 300px / 2 - 50px);
     left: 2em;
@@ -155,4 +164,10 @@ button {
     background-color: #FDCA40;
     border-radius: 1em;
 }
+/* ****************************************** GALLERY ****************************************** */
 
+/* ****************************************** ABOUT ****************************************** */
+#about :first-child {
+    text-align: center;
+    padding: 1em;
+}
