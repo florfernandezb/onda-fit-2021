@@ -149,10 +149,10 @@ h2 {
 
 #gallery h2 {
     font-family: 'Krona One', sans-serif;
-    width: 200px;
+    width: 250px;
     left: 2em;
     position: absolute;
-    top: calc(63px + 300px / 2 - 24px - 85px);
+    top: calc(63px + 300px / 2 - 24px - 90px);
 }
 
 #gallery button {
