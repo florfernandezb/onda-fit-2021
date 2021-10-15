@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+    font-size: 1em;
+    color: #2B2D42;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: red;
+    margin: 10px 20px;
+    background: no-repeat url(res/logo.png);
+    font-size: 0;
+    width: 100px;
+    height: 53px;
+}
+
+#nav a {
+    color: #2B2D42;
+}
+
+#open-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#open-close a{
+    background: no-repeat url(res/menu.png);
+    background-size: cover;
+    display: block;
+    margin: calc(63px / 2 - 15px) 20px;
+    width: 30px;
+    height: 30px;
+    font-size: 0;
+}
+
+.close {
+    display: none;
+}
+
+#nav:target .close {
+    display: block;
+}
+
+#nav:target .open {
+    display: none;
+}
+
+#nav:target #menu {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+#menu {
+    position: absolute;
+    top: 63px;
+    padding: 1em;
+    background-color: #FF5714;
+    z-index: 100;
+    display: none;
+}
+
+#menu a{
+    color: #F8F4F9;
+    line-height: 4em;
+}
+
+/* ****************************************** GALLERY ****************************************** */
+
+#gallery {
+    max-width: 1200px;
+    margin: auto;
+}
+
+#gallery ul a {
+    width: 13px;
+    height: 13px;
+    background-size: cover;
+    font-size: 0;
+    display: inline-block;
+}
+
+#next a {
+    background: url(res/blueCircleLight.png) no-repeat;
+}
+
+#previous a {
+    background: url(res/blueCircleDark.png) no-repeat;
+}
+
+img {
+    max-width: 100%;
+}
+
+#banner-2 {
+    display: none;
+}
+
+#gallery li {
+    display: inline-block;
+    padding: .3em;
+}
+
+#gallery ul {
+    text-align: center;
+}
+
+#gallery:target #banner-1{
+    display: none;
+}
+
+#gallery:target #banner-2{
+    display: block;
+}
+
+#gallery:target #next a{
+    font-size: 0;
+    background: url(res/blueCircleDark.png) no-repeat;
+}
+
+#gallery:target #previous a{
+    font-size: 0;
+    background: url(res/blueCircleLight.png) no-repeat;
+}
+
+#gallery figcaption {
+    display: none;
+}
+
+h2 {
+    font-family: 'Krona One', sans-serif;
+    width: 200px;
+    left: 2em;
+    position: absolute;
+    top: calc(63px + 300px / 2 - 24px - 85px);
+}
+
+button {
+    position: absolute;
+    top: calc(63px + 300px / 2 - 50px);
+    left: 2em;
+    width: 100px;
+    border: none;
+    background-color: #FDCA40;
+    border-radius: 1em;
+}
+

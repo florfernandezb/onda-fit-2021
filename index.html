@@ -1,0 +1,70 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Tipografías  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+
+    <title>Onda Fit</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Onda Fit
+        </h1>
+        <nav id="nav">
+            <ul id="open-close">
+                <li class="open"><a href="#nav">Abrir</a></li>
+                <li class="close"><a href="#">Cerrar</a></li>
+            </ul>
+            <ul id="menu">
+                <li><a href="#about">Sobre nosotros </a></li>
+                <li><a href="#class">Clases</a></li>
+                <li><a href="#nutrition">Nutrición</a></li>
+                <li><a href="#venues">Sedes</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="gallery">
+        <h2>Mejorá tu calidad de vida</h2>
+        <figure>
+            <picture id="banner-1">
+                <source media="(min-width: 780px)" srcset="res/banner-1-pc.png">
+                <source media="(min-width: 480px)" srcset="res/banner-1-tablet.png">
+                <img src="res/banner-1.jpg" alt="La foto">
+            </picture>
+            <figcaption>
+                Cada vez hay más gente que opta
+                por la comida healthy. Conocé
+                nuestros planes de alimentación
+                para mejorar tu calidad de vida.
+            </figcaption>
+        </figure>
+
+
+        <picture id="banner-2">
+            <source media="(min-width: 780px)" srcset="res/banner-2-pc.jpg">
+            <source media="(min-width: 480px)" srcset="res/banner-2-tablet.jpg">
+            <img src="res/banner-2.jpg" alt="La foto">
+        </picture>
+        <button><a href="#about">Ver más</a></button>
+        <ul>
+            <li id="next"><a href="#gallery">siguiente</a></li>
+            <li id="previous"><a href="#">anterior</a></li>
+        </ul>
+    </section>
+</body>
+
+</html>

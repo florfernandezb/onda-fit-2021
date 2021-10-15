@@ -1,0 +1,654 @@
+/******************************* GENERALES *******************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Krona One', sans-serif;
+}
+
+h2 {
+    font-family: 'Krona One', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    padding: 1.5em;
+}
+
+h3 {
+    font-family: 'Krona One', sans-serif;
+    font-size: 0.75em;
+    text-align: center;
+}
+
+p {
+    font-family: 'Prompt', sans-serif;
+    font-size: 0.75em;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    display: inline-block;
+}
+
+.galery {
+    width: 100%;
+    text-align: center;
+    line-height: 0.75em;
+    padding: 0.75em;
+}
+
+.galery li {
+    margin: auto;
+    display:inline;
+}
+
+.blue-circle a {
+    width: 13px;
+    height: 13px;
+    background-size: cover;
+    font-size: 0;
+    display: inline-block;
+    background: url(./recursos/Recurso6.png) no-repeat;
+}
+
+.yellow-circle a {
+    width: 13px;
+    height: 13px;
+    background-size: cover;
+    font-size: 0;
+    display: inline-block;
+    background: url(./recursos/Recurso14.png) no-repeat;
+}
+
+.yellow-circle a:hover {
+    background: url(./recursos/Recurso12.png) no-repeat;
+}
+
+/******************************* HEADER *******************************/
+h1 {
+    background: url(./recursos/logo.png) no-repeat;
+    display: block;
+    font-size: 0;
+    width: 114px;
+    height: 74px;
+    background-position: 13px 13px;
+}
+
+header {
+    width: 100%;
+    height: 15em;
+    background: no-repeat url(./recursos/banner-1.png);
+    background-position-y: 2em;
+}
+
+#nav button {
+    font-size: 0.55em;
+    margin: 0.5em 1em;
+    height: 2em;
+    width: 25%;
+    border: none;
+    background-color: #FDCA40;
+    border-radius: 1em;
+}
+
+#banner-galery {
+    width: 25%;
+    margin: -13px;
+}
+
+#header:target {
+    background-position-y: 30px;
+    background-image: url(./recursos/banner-2.png);
+}
+
+#nav a {
+    color: #2B2D42;
+}
+
+#menu a{
+    color: #F8F4F9;
+    line-height: 3em;
+}
+
+#open-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#menu {
+    position: absolute;
+    top: 8vh;
+    right: 1em;
+    padding: 1em;
+    background-color: #FF5714;
+    z-index: 100;
+    display: none;
+}
+
+#open-close li a {
+    background: url(./recursos/menu.png) no-repeat;
+    background-size: cover;
+    display: block;
+    margin: 10px 20px;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+}
+
+.close {
+    display: none;
+}
+
+#nav:target .close {
+    display: block;
+}
+
+#nav:target .open {
+    display: none;
+}
+
+#nav:target #menu {
+    display: block;
+}
+
+#cta-text h2, #cta-text p {
+    display: none;
+}
+
+/******************************* POR QUE HACER DEPORTE *******************************/
+#about {
+    background-color: #FDCA40;
+    width: 100%;
+    height: 26em;
+}
+
+#sleep h3 {
+    margin: auto;
+    background: url(./recursos/Recurso1.png) no-repeat;
+    background-position: 50% 110%;
+    border-top: 13em solid transparent;
+}
+
+#about article {
+    background-color: white;
+    width: 90%;
+    height: 19em;
+    position: absolute;
+    left: 5%;
+    border-radius: 1em;
+    box-shadow: 10px 5px 5px rgb(0 0 0 / 20%);
+}
+
+#about article p {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding-top: 0.8em;
+}
+
+#stress h3 {
+    margin: auto;
+    background: url(./recursos/Recurso2.png) no-repeat;
+    background-position: 50% 125%;
+    border-top: 16em solid transparent;
+}
+
+#heart-health h3 {
+    margin: auto;
+    background: url(./recursos/Recurso3.png) no-repeat;
+    background-position: 50% 125%;
+    border-top: 15em solid transparent;
+}
+
+#about-galery {
+    position: absolute;
+    top: 38em;
+}
+
+#heart-health, #stress {
+    display: none;
+}
+
+#about article:target, #about article:hover {
+    display: block;
+}
+
+.blue-circle a:hover {
+    background: no-repeat url(./recursos/Recurso5.png);
+}
+
+/******************************* CLASES *******************************/
+#class {
+    background-color: #2B2D42;
+    height: 25em;
+}
+
+#class h2 {
+    
+    color: #FDCA40; 
+}
+
+#class h3 {
+    text-transform: uppercase;
+    font-size: 0.87em;
+    line-height: 2em;
+    width: 35%;
+    height: 2em;
+    position: absolute;
+    top: 12em;
+    left: 32%;
+    color: #FDCA40;
+    border-top: solid 2px #FDCA40;
+    border-bottom: solid 2px #FDCA40;
+}
+
+#class article {
+    position: absolute;
+    width: 100%;
+    height: 340px;
+}
+
+#class p {
+    width: 60%;
+    color: #FDCA40;
+    position: absolute;
+    top: 17em;
+    left: 20%;
+    text-align: center;
+}
+
+#crossfit {
+    background-image: url(./recursos/Recurso7.jpg);
+}
+
+#functional {
+    background-image: url(./recursos/Recurso8.jpg);
+}
+
+#cardio {
+    background-image: url(./recursos/Recurso9.png);
+}
+#zumba {
+    background-image: url(./recursos/Recurso10.jpg);
+}
+
+#functional, #cardio, #zumba {
+    display: none;
+}
+
+#class article:target {
+    display: inline-block;
+}
+
+#class-galery {
+    position: absolute;
+    top: 61em;
+}
+
+#video iframe {
+    border: 0;
+    width: 100%;
+    height: 56.25vw;
+}
+
+/******************************* NUTRICION *******************************/
+
+#nutrition {
+    background-color: #F8F4F9;
+    width: 100%;
+    height: 15em;
+}
+
+#nutrition article {
+    width: 90%;
+    height: 8em;
+    margin: auto;
+    border-radius: 1em;
+    position: absolute;
+    left: 5%;
+}
+
+#nutrition .blue {
+    background-color: #2B2D42;
+    color: #F8F4F9;
+}
+
+#calcio p {
+    position: absolute;
+    top: 3.5em;
+    left: 38%;
+    width: 53%;
+}
+
+#calcio h3{
+    height: 10em;
+    width: 80%;
+    margin-left: 1.5em;
+    background: url(./recursos/Recurso11.png) no-repeat;
+    border-top: 2em solid transparent;
+}
+
+#nutrition .white {
+    color: #2B2D42;
+    background-color: #F8F4F9;
+    border-radius: 0;
+}
+
+#hierro h3{
+    height: 9em;
+    width: 90%;
+    background: url(./recursos/Recurso13.png) no-repeat right;
+    border-top: 2em solid transparent;
+    border-right: 1.5em solid transparent;
+    text-align: left;
+    margin-left: 2.4em;
+}
+
+#hierro p {
+    top: 3.5em;
+    left: 10%;
+    width: 50%;
+    color: #2B2D42; 
+    position: absolute;
+}
+
+#nutrition-galery {
+    position: absolute;
+    top: 93.7em;
+}
+
+#hierro, #sodio, #potasio, #magnesio {
+    display: none;
+}
+
+#nutrition article:target {
+    display: inline-block;
+}
+
+#sodio h3 {
+    line-height: 4em;
+    height: 9em;
+    margin-left: 1.5em;
+    background: url(./recursos/Recurso15.png) no-repeat left;
+    border-top: 2em solid transparent;
+}
+
+#sodio p {
+    position: absolute;
+    top: 4.5em;
+    left: 45%;
+    width: 53%;
+}
+
+#potasio h3 {
+    height: 9em;
+    width: 90%;
+    margin-left: 2.3em;
+    background: url(./recursos/Recurso16.png) no-repeat right;
+    border-top: 2em solid transparent;
+    border-right: 1.1em solid transparent;
+    text-align: left;
+}
+
+#potasio p {
+    top: 3.5em;
+    left: 10%;
+    width: 50%;
+    color: #2B2D42; 
+    position: absolute;
+}
+
+#magnesio h3 {
+    line-height: 5em;
+    height: 10em;
+    margin-left: 1.5em;
+    background: url(./recursos/Recurso17.png) no-repeat left;
+    border-top: 1em solid transparent;
+}
+
+#magnesio p {
+    position: absolute;
+    top: 4.5em;
+    left: 40%;
+    width: 53%;
+}
+
+/******************************* SEDES *******************************/
+#venues {
+    margin-bottom: 2em;
+}
+
+#venues h3 {
+    padding: 1em;
+    color: #2B2D42;
+}
+
+#venues p {
+    text-align: center;
+    color: #2B2D42;
+}
+
+#belgrano iframe{
+    border: 0;
+    width: 100%;
+    height: 56.25vw;
+}
+
+/******************************* INFO *******************************/
+
+#info {
+    height: 29em;
+}
+
+#info h3 {
+    color: #2B2D42;
+    margin-top: 1em
+}
+
+/* Se ocultan todas las tarjetas en el estado inicial*/
+.info-card {
+    width: 100%;
+    border-radius: 1em;
+    background-color: #F8F4F9;
+    position: absolute;
+    padding-bottom: 1em;
+    margin-top: 1em;
+    display: none;
+}
+
+#info article picture {
+    margin-top: 1em;
+}
+
+#info article p {
+    padding: 1em;
+    padding-top: 0.5em;
+}
+
+#info div ul:first-child {
+    margin: auto;
+    width: 40%;
+    background-color: #FDCA40;
+    border-radius: 1em;
+    padding: 0.3em;
+    text-align: center;
+}
+
+#info article li {
+    line-height: 1em;
+}
+
+#info article a {
+    font-size: 0.7em;
+    color: #2B2D42;
+}
+
+/* Se oculta la informacion adicional en el estado inicial*/
+#info article .more-info {
+    display: none;
+}
+
+/* Se oculta VER MENOS en el estado inicial*/
+#info div ul:first-child li:last-child {
+    display: none;
+}
+
+/* Se muestra la informacion adicional */
+#info div:target .more-info {
+    display: inline-block;
+}
+
+/* Se oculta VER MAS cuando se despliega la informacion */
+#info div:target ul:first-child li:first-child {
+    display: none;
+}
+
+/* Se muestra VER MENOS cuando el div está en target */
+#info div:target ul:first-child li:last-child {
+    display: inline-block !important;
+}
+
+#hidratacion {
+    display: inline-block;
+}
+
+.more-info li {
+    font-family: 'Prompt', sans-serif;
+    font-size: 0.75em;
+    padding: 1em;
+    padding-top: 0;
+}
+
+.more-info {
+    margin-top: 1em;
+    z-index: 2;
+}
+
+#info-galery {
+    position: absolute;
+    margin-top: -2em;
+    z-index: 0;
+}
+
+#info article:target {
+    display: inline-block;
+}
+
+/******************************* FORM *******************************/
+
+#contact {
+    background-color: #2B2D42;
+    color: #FDCA40;
+}
+
+.form-item label {
+    display: inline-block;
+}
+
+#contact form div:first-child {
+    margin-top: 0;
+}
+
+input {
+    width: 100%;
+    height: 2.5em;
+    border-radius: 1em;
+}
+
+#msg {
+    width: 100%;
+    height: 10em;
+    border-radius: 1em;
+}
+
+.form-item {
+    margin: 1em;
+}
+
+input[type="submit"] {
+    background-color: #FDCA40;
+    color: #2B2D42;
+    margin-left: 6.5em; 
+    margin-bottom: 1em;   
+    width: 50%;
+    height: 2em;
+    border-radius: 1em;
+}
+
+/******************************* FOOTER *******************************/
+
+footer {
+    background-color: #2B2D42;
+    color: #FF5714;
+    font-size: 0.5em;
+    padding: 2em;
+}
+
+footer li {
+    margin: 1em;
+}
+
+footer ul {
+    width: 33%;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+footer div ul {
+    display: inline;
+}
+
+footer div ul:first-child li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+footer a {
+    color: #FF5714;
+}   
+
+#mapa li:first-child a {
+    background: url(./recursos/logo.png) no-repeat;
+    display: inline-block;
+    font-size: 0;
+    width: 100px;
+    height: 60px;
+}
+
+footer div {
+    display: inline-block;
+    position: absolute;
+    margin: 3em;
+    width: 55%;
+}
+
+.redes a {
+    display: inline-block;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+}
+
+#ig {
+    background-image: url(./recursos/instagram-icon.png);
+}
+
+#tw {
+    background-image: url(./recursos/twitter-icon.png);
+}
+
+#fb {
+    background-image: url(./recursos/facebook-icon.png);
+}
+
+footer p {
+    font-size: 1em;
+    text-align: center;
+}
