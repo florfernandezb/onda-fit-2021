@@ -7,6 +7,11 @@
     color: #2B2D42;
 }
 
+body {
+    max-width: 1920px;
+    margin: auto;
+}
+
 ul {
     list-style: none;
 }
@@ -25,6 +30,10 @@ h1 {
 
 h2 {
     font-size: 1.3em;
+}
+
+span {
+    font-weight: bold;
 }
 
 /* ****************************************** GENERAL ****************************************** */
@@ -149,7 +158,7 @@ h2 {
 #gallery h2 {
     font-family: 'Krona One', sans-serif;
     width: 250px;
-    left: 2em;
+    left: 20px;
     position: absolute;
     top: calc(63px + 300px / 2 - 24px - 90px);
 }
@@ -157,7 +166,7 @@ h2 {
 #see-more {
     position: absolute;
     top: calc(63px + 300px / 2 - 50px);
-    left: 2em;
+    left: 20px;
     width: 100px;
     border: none;
     text-align: center;
@@ -170,6 +179,7 @@ h2 {
 #about {
     text-align: center;
     padding: 1em;
+    display: inline-block;
 }
 
 #about h3 {
@@ -186,7 +196,6 @@ h2 {
 
 #about ul {
     width: 100%;
-    height: 50vh;
     max-height: 500px;
 }
 
@@ -216,10 +225,352 @@ h2 {
     border-top: 8em solid transparent;
 }
 
+#sueno {
+    background-color: #FF5714 !important;
+}
+
 #about ul:first-of-type li:last-child h3 {
     background: no-repeat url(res/meditar.png);
     background-position: 50% 135%;
     border-top: 8em solid transparent;
 }
 
+/* ****************************************** ABOUT ****************************************** */
 
+/* ****************************************** CLASS ****************************************** */
+
+main {
+    display: inline-block;
+    margin: 1em;
+    padding: 2em;
+}
+
+main h2, main h3 {
+    text-align: center;
+    padding: 10px 0;
+}
+
+main figure {
+    margin: auto;
+    width: 326px;
+    height: 347px;
+}
+
+main figcaption h4{
+    position: relative;
+    margin: auto;
+    color: #FDCA40;
+    width: fit-content;
+    text-transform: uppercase;
+    font-family: 'Krona One', sans-serif;
+    border-top: solid 2px #FDCA40;
+    border-bottom: solid 2px #FDCA40;
+    padding: 5px;
+    bottom: 150px;
+}
+
+#main figure p {
+    position: relative;
+    bottom: 150px;
+    color: #FDCA40;
+}
+
+#crossfit-content:target .modal, 
+#functional-content:target .modal, 
+#cardio-content:target .modal{
+    display: block;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 1em;
+    padding-bottom: 3em;
+    border: 1px solid #888;
+    width: 90%; 
+}
+
+main p {
+    padding: 10px;
+    text-align: center;
+}
+
+main article a {
+    color: #FF5714;
+    float: right;
+}
+
+#cardio, #functional {
+    display: none;
+    position: relative;
+    top: 0;
+}
+
+#crossfit {
+    display: inline-block; 
+}
+
+.class-gallery a {
+    width: 13px;
+    height: 13px;
+    background-size: cover;
+    font-size: 0;
+    display: inline-block;
+    background: url(res/yellowCircleDark.png) no-repeat;
+}
+
+.class-gallery a:hover {
+    background: url(res/yellowCircleLight.png) no-repeat;
+}
+
+#main ul {
+    text-align: center;
+    padding-top: 1em;
+}
+
+#main ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+/* ****************************************** CLASS ****************************************** */
+
+/* ****************************************** VIDEO ****************************************** */
+
+#video {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    text-align: center;
+    }
+    
+#video iframe,
+#video object,
+#video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* ****************************************** VIDEO ****************************************** */
+
+/* ****************************************** NUTRICION ****************************************** */
+#nutrition {
+    background-color: #F8F4F9;
+    padding: 2em;
+    width: 100%;
+    text-align: center;
+}
+
+.blue {
+    background-color: #2B2D42;
+}
+
+.white {
+    border: solid 1px;
+}
+
+.blue h3, .blue p {
+    color: #F8F4F9;
+}
+
+.card {
+    border-radius: 2em;
+    position: relative;
+    top: 0;
+    padding: 2em;
+}
+
+#nutrition h3 {
+    margin: auto;
+    padding-top: 100px;
+    height: 130px;
+}
+
+#hierro h3 {
+    width: 90px;
+    background: url(res/rabanito.png) no-repeat top;
+}
+
+#calcio h3 {
+    width: 78px;
+    background: url(res/calcio.png) no-repeat top;
+    
+}
+
+#potasio h3 {
+    width: 95px;
+    background: url(res/potasio.png) no-repeat top;
+}
+
+#sodio h3 {
+    width: 91px;
+    background: url(res/sodio.png) no-repeat top;
+}
+
+#magnesio h3 {
+    width: 81px;
+    background: url(res/magnesio.png) no-repeat top;
+}
+
+#proteina h3 {
+    width: 91px;
+    background: url(res/carne.png) no-repeat top;
+}
+
+.nutrition-gallery a {
+    width: 13px;
+    height: 13px;
+    background-size: cover;
+    font-size: 0;
+    display: inline-block;
+    background: url(res/blueCircleDark.png) no-repeat;
+}
+
+.nutrition-gallery a:hover {
+    background: url(res/blueCircleLight.png) no-repeat;
+}
+
+.nutrition-gallery li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#nutrition div:first-of-type {
+    position: relative;
+    top: 0;
+}
+
+
+
+
+
+
+/******************************* FORM *******************************/
+
+#contact {
+    background-color: #2B2D42;
+    color: #FDCA40;
+}
+
+.form-item label {
+    display: inline-block;
+}
+
+#contact form div:first-child {
+    margin-top: 0;
+}
+
+input {
+    width: 100%;
+    height: 2.5em;
+    border-radius: 1em;
+}
+
+#msg {
+    width: 100%;
+    height: 10em;
+    border-radius: 1em;
+}
+
+.form-item {
+    margin: 1em;
+}
+
+input[type="submit"] {
+    background-color: #FDCA40;
+    color: #2B2D42;
+    margin-left: 6.5em; 
+    margin-bottom: 1em;   
+    width: 50%;
+    height: 2em;
+    border-radius: 1em;
+}
+
+/******************************* FOOTER *******************************/
+
+footer {
+    background-color: #2B2D42;
+    color: #FF5714;
+    font-size: 0.5em;
+    padding: 2em;
+}
+
+footer li {
+    margin: 1em;
+}
+
+footer ul {
+    width: 33%;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+footer div ul {
+    display: inline;
+}
+
+footer div ul:first-child li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+footer a {
+    color: #FF5714;
+}   
+
+#mapa li:first-child a {
+    background: url(./recursos/logo.png) no-repeat;
+    display: inline-block;
+    font-size: 0;
+    width: 100px;
+    height: 60px;
+}
+
+footer div {
+    display: inline-block;
+    position: absolute;
+    margin: 3em;
+    width: 55%;
+}
+
+.redes a {
+    display: inline-block;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+}
+
+#ig {
+    background-image: url(./recursos/instagram-icon.png);
+}
+
+#tw {
+    background-image: url(./recursos/twitter-icon.png);
+}
+
+#fb {
+    background-image: url(./recursos/facebook-icon.png);
+}
+
+footer p {
+    font-size: 1em;
+    text-align: center;
+}
