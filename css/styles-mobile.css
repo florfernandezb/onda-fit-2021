@@ -21,11 +21,11 @@ a {
 }
 
 h1 {
-    margin: 10px 20px;
+    margin: 20px 20px;
     background: no-repeat url(../res/logo.png);
     font-size: 0;
-    width: 100px;
-    height: 53px;
+    width: 134px;
+    height: 70px;
 }
 
 h2 {
@@ -53,9 +53,9 @@ span {
     background: no-repeat url(../res/menu.png);
     background-size: cover;
     display: block;
-    margin: calc(63px / 2 - 15px);
-    width: 30px;
-    height: 30px;
+    margin: calc(90px / 2 - 35px / 2);
+    width: 50px;
+    height: 35px;
     font-size: 0;
 }
 
@@ -101,8 +101,8 @@ span {
 }
 
 #gallery ul a {
-    width: 13px;
-    height: 13px;
+    width: 17px;
+    height: 17px;
     background-size: cover;
     font-size: 0;
     display: inline-block;
@@ -161,12 +161,12 @@ span {
     left: 20px;
     line-height: 1.7em;
     position: absolute;
-    top: calc(46px + 300px / 2 - 24px - 90px);
+    top: calc(95px + 300px / 2 - 24px - 90px);
 }
 
 #see-more {
     position: absolute;
-    top: calc(57px + 300px / 2 - 50px);
+    top: calc(110px + 300px / 2 - 50px);
     left: 20px;
     width: 100px;
     border: none;
@@ -179,19 +179,18 @@ span {
     position: absolute;
 }
 
-/* and (min-width: 480px) */
-@media screen  and (max-width: 448px) {
+@media screen  and (max-width: 400px) {
     #gallery h2 {
         width: 200px;
         font-size: 1em;
         line-height: 1.7em;
         position: absolute;
-        top: calc(46px + 300px / 2 - 24px - 90px);
+        top: calc(80px + 300px / 2 - 24px - 90px);
     }
     
     #see-more {
         position: absolute;
-        top: calc(36px + 300px / 2 - 50px);
+        top: calc(75px + 300px / 2 - 50px);
         width: 90px;
         font-size: .8em;
     }
@@ -310,6 +309,10 @@ main figcaption h4{
     color: #FDCA40;
 }
 
+.modal-content span {
+    color: #2B2D42 !important;
+}
+
 #crossfit-content:target .modal, 
 #functional-content:target .modal, 
 #cardio-content:target .modal{
@@ -347,7 +350,7 @@ img {
 }
 
 main p {
-    padding: 10px;
+    padding: 1em;
     text-align: center;
     color: #FDCA40;
 }
@@ -373,8 +376,8 @@ main article a {
 }
 
 .class-gallery a {
-    width: 13px;
-    height: 13px;
+    width: 17px;
+    height: 17px;
     background-size: cover;
     font-size: 0;
     display: inline-block;
@@ -427,6 +430,10 @@ main article a {
     text-align: center;
     position: relative;
     top: 1em;
+}
+
+#nutrition h2 {
+    padding-bottom: 1em;
 }
 
 .blue {
@@ -498,8 +505,8 @@ main article a {
 }
 
 .nutrition-gallery a {
-    width: 13px;
-    height: 13px;
+    width: 17px;
+    height: 17px;
     background-size: cover;
     font-size: 0;
     display: inline-block;
@@ -525,7 +532,7 @@ main article a {
 #venues {
     position: relative;
     display: block;
-    top: 3em;
+    top: 2em;
     text-align: center;
     color: #FF5714;
 }
@@ -544,7 +551,8 @@ main article a {
 
 #venues iframe {
     width: 100%;
-    height: 100%;
+    height: 350px;
+    margin-bottom: 10px;
 }
 
 /******************************* VENUES *******************************/
@@ -557,11 +565,15 @@ main article a {
     display: block;
     top: 5em;
     width: 100%;
-    padding-bottom: 2em;
+}
+
+form {
+    padding: 2em;
+    padding-top: 1em;
 }
 
 #contact h2 {
-    padding: 1em;
+    padding: 1em 0 0 1em;
 }
 
 .form-item label {
@@ -571,8 +583,8 @@ main article a {
     font-weight: bold;
 }
 
-#contact form div:first-child {
-    margin-top: 0;
+#contact div {
+    margin-bottom: 15px;
 }
 
 input {
@@ -589,10 +601,6 @@ input {
     padding: 1em;
 }
 
-.form-item {
-    margin: 1em;
-}
-
 input[type="submit"] {
     background-color: #2B2D42;
     color: #FDCA40;
@@ -602,6 +610,7 @@ input[type="submit"] {
     padding-left: 0;
     position: relative;
     left: 33%;
+    margin-top: 1em;
 }
 
 /******************************* FOOTER *******************************/
@@ -616,7 +625,7 @@ input[type="submit"] {
 
 footer p {
     padding: .5em;
-    font-size: 0.9em;
+    font-size: 0.7em;
     background-color: #2B2D42;
     color: #F8F4F9;
 }
@@ -625,8 +634,8 @@ footer p {
     background: url(../res/logo.png) no-repeat;
     display: inline-block;
     font-size: 0;
-    width: 100px;
-    height: 60px;
+    width: 134px;
+    height: 70px;
     margin-top: 1em;
 }
 
@@ -648,8 +657,8 @@ footer p {
 .redes a {
     display: inline-block;
     font-size: 0;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
 
 #ig {

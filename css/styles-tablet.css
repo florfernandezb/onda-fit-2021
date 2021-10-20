@@ -7,42 +7,158 @@ h1 {
 }
 
 h2 {
-    font-size: 1.8em ;
+    font-size: 1.5em ;
 }
 
 h3 {
-    font-size: 1.7em !important;
+    font-size: 1.3em !important;
 }
 
 p, a, label {
-    font-size: 1.5em;
+    font-size: 1.1em;
 }
 
-
 #gallery h2 {
-    width: 350px;
+    width: 300px;
     position: absolute;
-    top: 190px;
+    top: calc(186px + 80px / 2);
     left: 40px;
 }
 
 #see-more {
-    width: 150px;
+    width: 140px;
     position: absolute;
-    top: 300px;
+    top: calc(186px + 120px + 26px);
     left: 40px;
 }
 
 @media screen and (max-width: 740px) {
     #gallery h2 {
-        width: 300px;
-        top: 190px;
-        font-size: 1.5em;
+        width: 235px;
+        top: 160px;
+        font-size: 1.3em;
+        left: 20px;
     }
 
     #see-more {
-        font-size: 1.2em;
+        font-size: 1em;
         width: 100px;
-        top: 300px;
+        top: 250px;
+        left: 20px;
     }
+
+    h1 {
+        margin: 20px;
+    }
+}
+
+#venues p {
+    font-size: 1.3em;
+}
+
+
+#nutrition h3 {
+    margin: auto;
+    padding-top: 120px;
+    height: 170px;
+}
+
+#hierro h3 {
+    width: 125px;
+    background: url(../res/tablet/rabanito-tablet.png) no-repeat top;
+}
+
+#calcio h3 {
+    width: 103px;
+    background: url(../res/tablet/calcio-tablet.png) no-repeat top;
+}
+
+#potasio h3 {
+    width: 125px;
+    background: url(../res/tablet/potasio-tablet.png) no-repeat top;
+}
+
+#sodio h3 {
+    width: 120px;
+    background: url(../res/tablet/sodio-tablet.png) no-repeat top;
+}
+
+#proteina h3 {
+    width: 97px;
+    background: url(../res/tablet/carne-tablet.png) no-repeat top;
+}
+
+#magnesio h3 {
+    width: 112px;
+    background: url(../res/tablet/magnesio-tablet.png) no-repeat top;
+}
+
+.nutrition-gallery a {
+    width: 21px;
+    height: 21px;
+    margin: 0 5px;
+    background: url(../res/tablet/blueCircleDark-tablet.png) no-repeat;
+}
+
+.nutrition-gallery a:hover {
+    background: url(../res/tablet/blueCircleLight-tablet.png) no-repeat;
+}
+
+#mapa li:first-child a {
+    background: url(../res/tablet/logo-tablet.png) no-repeat;
+    display: inline-block;
+    font-size: 0;
+    width: 201px;
+    height: 106px;
+    margin-top: 1em;
+}
+
+.redes a {
+    width: 50px;
+    height: 50px;
+}
+
+#ig {
+    background-image: url(../res/pc/instagram-icon-web.png);
+}
+
+#tw {
+    background-image: url(../res/pc/twitter-icon-web.png);
+}
+
+#fb {
+    background-image: url(../res/pc/facebook-icon-web.png);
+}
+
+footer p {
+    font-size: 1em !important;
+}
+
+#about h3 {
+    border-top: 7em solid transparent !important;
+}
+
+.redes li {
+    margin: 1em 1em 2.1em 1em;
+}
+
+#open-close a {
+    margin-top: calc(146px / 2 - 35px / 2);
+}
+
+#body:target #menu {
+    top: 186px;
+}
+
+.class-gallery a {
+    width: 21px;
+    height: 21px;
+    background-size: cover;
+    font-size: 0;
+    display: inline-block;
+    background: url(../res/tablet/yellowCircleDark-tablet.png) no-repeat;
+}
+
+.class-gallery a:hover {
+    background: url(../res/tablet/yellowCircleLight-tablet.png) no-repeat;
 }
