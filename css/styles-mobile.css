@@ -22,7 +22,7 @@ a {
 
 h1 {
     margin: 10px 20px;
-    background: no-repeat url(res/logo.png);
+    background: no-repeat url(../res/logo.png);
     font-size: 0;
     width: 100px;
     height: 53px;
@@ -50,7 +50,7 @@ span {
 }
 
 #open-close a{
-    background: no-repeat url(res/menu.png);
+    background: no-repeat url(../res/menu.png);
     background-size: cover;
     display: block;
     margin: calc(63px / 2 - 15px);
@@ -109,11 +109,11 @@ span {
 }
 
 #next a {
-    background: url(res/blueCircleLight.png) no-repeat;
+    background: url(../res/blueCircleLight.png) no-repeat;
 }
 
 #previous a {
-    background: url(res/blueCircleDark.png) no-repeat;
+    background: url(../res/blueCircleDark.png) no-repeat;
 }
 
 #gallery img {
@@ -143,12 +143,12 @@ span {
 
 #gallery:target #next a{
     font-size: 0;
-    background: url(res/blueCircleDark.png) no-repeat;
+    background: url(../res/blueCircleDark.png) no-repeat;
 }
 
 #gallery:target #previous a{
     font-size: 0;
-    background: url(res/blueCircleLight.png) no-repeat;
+    background: url(../res/blueCircleLight.png) no-repeat;
 }
 
 #gallery figcaption {
@@ -195,6 +195,10 @@ span {
         width: 90px;
         font-size: .8em;
     }
+
+    #main figure p {
+        width: 90% !important;
+    }
 }
 /* ****************************************** GALLERY ****************************************** */
 
@@ -237,13 +241,13 @@ span {
 }
 
 #about ul:first-of-type li:first-child h3 {
-    background: no-repeat url(res/corazon.png);
+    background: no-repeat url(../res/corazon.png);
     background-position: 50% 135%;
     border-top: 9em solid transparent;
 }
 
 #sueno h3 {
-    background: no-repeat url(res/suenos.png);
+    background: no-repeat url(../res/suenos.png);
     background-position: 50% 125%;
     border-top: 9em solid transparent;
 }
@@ -253,7 +257,7 @@ span {
 }
 
 #about ul:first-of-type li:last-child h3 {
-    background: no-repeat url(res/meditar.png);
+    background: no-repeat url(../res/meditar.png);
     background-position: 50% 135%;
     border-top: 9em solid transparent;
 }
@@ -267,13 +271,16 @@ main {
 }
 
 #main {
-position: relative;
-top: 50px;
-width: 90%;
-margin: auto;
+    position: relative;
+    top: 50px;
+    width: 90%;
+    margin: auto;
+    background-color: #2B2D42;
+    border-radius: 1em;
 }
 
 main h2, main h3 {
+    color: #FDCA40;
     text-align: center;
     padding: 10px 0;
 }
@@ -288,15 +295,19 @@ main figcaption h4{
     border-top: solid 2px #FDCA40;
     border-bottom: solid 2px #FDCA40;
     padding: 5px;
-    bottom: 150px;
+    bottom: 180px;
 }
 
 #main figure p {
     position: relative;
-    bottom: 150px;
+    bottom: 180px;
     color: #FDCA40;
     width: 75%;
     margin: auto;
+}
+
+#main span {
+    color: #FDCA40;
 }
 
 #crossfit-content:target .modal, 
@@ -327,6 +338,10 @@ main figcaption h4{
     width: 90%; 
 }
 
+.modal-content p {
+    color: #2B2D42;
+}
+
 img {
     max-width: 100%;
 }
@@ -334,11 +349,13 @@ img {
 main p {
     padding: 10px;
     text-align: center;
+    color: #FDCA40;
 }
 
 main article a {
     color: #FF5714;
     float: right;
+    padding-right: 2em;
 }
 
 #cardio, #functional {
@@ -361,16 +378,16 @@ main article a {
     background-size: cover;
     font-size: 0;
     display: inline-block;
-    background: url(res/yellowCircleDark.png) no-repeat;
+    background: url(../res/yellowCircleDark.png) no-repeat;
 }
 
 .class-gallery a:hover {
-    background: url(res/yellowCircleLight.png) no-repeat;
+    background: url(../res/yellowCircleLight.png) no-repeat;
 }
 
 #main ul {
     text-align: center;
-    padding-top: 1em;
+    padding-bottom: 2em;
 }
 
 #main ul li {
@@ -452,32 +469,32 @@ main article a {
 
 #hierro h3 {
     width: 90px;
-    background: url(res/rabanito.png) no-repeat top;
+    background: url(../res/rabanito.png) no-repeat top;
 }
 
 #calcio h3 {
     width: 78px;
-    background: url(res/calcio.png) no-repeat top;
+    background: url(../res/calcio.png) no-repeat top;
 }
 
 #potasio h3 {
     width: 95px;
-    background: url(res/potasio.png) no-repeat top;
+    background: url(../res/potasio.png) no-repeat top;
 }
 
 #sodio h3 {
     width: 91px;
-    background: url(res/sodio.png) no-repeat top;
+    background: url(../res/sodio.png) no-repeat top;
 }
 
 #magnesio h3 {
     width: 81px;
-    background: url(res/magnesio.png) no-repeat top;
+    background: url(../res/magnesio.png) no-repeat top;
 }
 
 #proteina h3 {
     width: 91px;
-    background: url(res/carne.png) no-repeat top;
+    background: url(../res/carne.png) no-repeat top;
 }
 
 .nutrition-gallery a {
@@ -486,11 +503,11 @@ main article a {
     background-size: cover;
     font-size: 0;
     display: inline-block;
-    background: url(res/blueCircleDark.png) no-repeat;
+    background: url(../res/blueCircleDark.png) no-repeat;
 }
 
 .nutrition-gallery a:hover {
-    background: url(res/blueCircleLight.png) no-repeat;
+    background: url(../res/blueCircleLight.png) no-repeat;
 }
 
 .nutrition-gallery li {
@@ -605,11 +622,18 @@ footer p {
 }
 
 #mapa li:first-child a {
-    background: url(res/logo.png) no-repeat;
+    background: url(../res/logo.png) no-repeat;
     display: inline-block;
     font-size: 0;
     width: 100px;
     height: 60px;
+    margin-top: 1em;
+}
+
+#mapa li {
+    padding-top: 2em;
+    line-height: 2em;
+    
 }
 
 .redes {
@@ -629,15 +653,15 @@ footer p {
 }
 
 #ig {
-    background-image: url(res/instagram-icon.png);
+    background-image: url(../res/instagram-icon.png);
 }
 
 #tw {
-    background-image: url(res/twitter-icon.png);
+    background-image: url(../res/twitter-icon.png);
 }
 
 #fb {
-    background-image: url(res/facebook-icon.png);
+    background-image: url(../res/facebook-icon.png);
 }
 
 .data {
