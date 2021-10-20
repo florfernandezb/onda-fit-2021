@@ -29,7 +29,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 span {
@@ -126,7 +126,7 @@ span {
 
 #gallery li {
     display: inline-block;
-    padding: .3em;
+    margin: 0 5px;
 }
 
 #gallery ul {
@@ -159,19 +159,42 @@ span {
     font-family: 'Krona One', sans-serif;
     width: 250px;
     left: 20px;
+    line-height: 1.7em;
     position: absolute;
-    top: calc(63px + 300px / 2 - 24px - 90px);
+    top: calc(46px + 300px / 2 - 24px - 90px);
 }
 
 #see-more {
     position: absolute;
-    top: calc(63px + 300px / 2 - 50px);
+    top: calc(57px + 300px / 2 - 50px);
     left: 20px;
     width: 100px;
     border: none;
     text-align: center;
     background-color: #FDCA40;
     border-radius: 1em;
+}
+
+#gallery:first-child {
+    position: absolute;
+}
+
+/* and (min-width: 480px) */
+@media screen  and (max-width: 448px) {
+    #gallery h2 {
+        width: 200px;
+        font-size: 1em;
+        line-height: 1.7em;
+        position: absolute;
+        top: calc(46px + 300px / 2 - 24px - 90px);
+    }
+    
+    #see-more {
+        position: absolute;
+        top: calc(36px + 300px / 2 - 50px);
+        width: 90px;
+        font-size: .8em;
+    }
 }
 /* ****************************************** GALLERY ****************************************** */
 
@@ -183,7 +206,7 @@ span {
 }
 
 #about h3 {
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 #about picture {
@@ -216,13 +239,13 @@ span {
 #about ul:first-of-type li:first-child h3 {
     background: no-repeat url(res/corazon.png);
     background-position: 50% 135%;
-    border-top: 8em solid transparent;
+    border-top: 9em solid transparent;
 }
 
 #sueno h3 {
     background: no-repeat url(res/suenos.png);
     background-position: 50% 125%;
-    border-top: 8em solid transparent;
+    border-top: 9em solid transparent;
 }
 
 #sueno {
@@ -232,7 +255,7 @@ span {
 #about ul:first-of-type li:last-child h3 {
     background: no-repeat url(res/meditar.png);
     background-position: 50% 135%;
-    border-top: 8em solid transparent;
+    border-top: 9em solid transparent;
 }
 
 /* ****************************************** ABOUT ****************************************** */
@@ -240,20 +263,19 @@ span {
 /* ****************************************** CLASS ****************************************** */
 
 main {
-    display: inline-block;
-    margin: 1em;
-    padding: 2em;
+    display: block;
+}
+
+#main {
+position: relative;
+top: 50px;
+width: 90%;
+margin: auto;
 }
 
 main h2, main h3 {
     text-align: center;
     padding: 10px 0;
-}
-
-main figure {
-    margin: auto;
-    width: 326px;
-    height: 347px;
 }
 
 main figcaption h4{
@@ -273,12 +295,14 @@ main figcaption h4{
     position: relative;
     bottom: 150px;
     color: #FDCA40;
+    width: 75%;
+    margin: auto;
 }
 
 #crossfit-content:target .modal, 
 #functional-content:target .modal, 
 #cardio-content:target .modal{
-    display: block;
+    display: inline-block;
 }
 
 .modal {
@@ -303,6 +327,10 @@ main figcaption h4{
     width: 90%; 
 }
 
+img {
+    max-width: 100%;
+}
+
 main p {
     padding: 10px;
     text-align: center;
@@ -321,6 +349,10 @@ main article a {
 
 #crossfit {
     display: inline-block; 
+}
+
+#main figure {
+    text-align: center;
 }
 
 .class-gallery a {
@@ -343,7 +375,11 @@ main article a {
 
 #main ul li {
     display: inline-block;
-    margin-left: 10px;
+    margin: 0 5px;
+}
+
+#main figcaption {
+    position: absolute;
 }
 
 /* ****************************************** CLASS ****************************************** */
@@ -352,16 +388,11 @@ main article a {
 
 #video {
     position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    height: 0;
-    overflow: hidden;
-    text-align: center;
-    }
+    padding-bottom: 70%;
+    top: 5em;
+}
     
-#video iframe,
-#video object,
-#video embed {
+#video iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -377,14 +408,18 @@ main article a {
     padding: 2em;
     width: 100%;
     text-align: center;
+    position: relative;
+    top: 1em;
 }
 
 .blue {
     background-color: #2B2D42;
+    border: solid 1px #2B2D42;
 }
 
 .white {
-    border: solid 1px;
+    background-color: #F8F4F9;
+    border: solid 1px #2B2D42;
 }
 
 .blue h3, .blue p {
@@ -393,9 +428,20 @@ main article a {
 
 .card {
     border-radius: 2em;
-    position: relative;
+    position: absolute;
     top: 0;
     padding: 2em;
+    opacity: 0;
+}
+
+#hierro {
+    opacity: 1;
+}
+
+.card:target {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
 }
 
 #nutrition h3 {
@@ -412,7 +458,6 @@ main article a {
 #calcio h3 {
     width: 78px;
     background: url(res/calcio.png) no-repeat top;
-    
 }
 
 #potasio h3 {
@@ -450,7 +495,7 @@ main article a {
 
 .nutrition-gallery li {
     display: inline-block;
-    margin-right: 10px;
+    margin: 0 5px;
 }
 
 #nutrition div:first-of-type {
@@ -458,20 +503,55 @@ main article a {
     top: 0;
 }
 
+/******************************* VENUES *******************************/
 
+#venues {
+    position: relative;
+    display: block;
+    top: 3em;
+    text-align: center;
+    color: #FF5714;
+}
 
+#venues h2, #venues p, #venues h3 {
+    color: #FF5714;
+}
 
+#venues h2 {
+    padding: 1em;
+}
 
+#venues p {
+    font-size: .9em;
+}
+
+#venues iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/******************************* VENUES *******************************/
 
 /******************************* FORM *******************************/
 
 #contact {
-    background-color: #2B2D42;
-    color: #FDCA40;
+    background-color: #FDCA40;
+    position: relative;
+    display: block;
+    top: 5em;
+    width: 100%;
+    padding-bottom: 2em;
+}
+
+#contact h2 {
+    padding: 1em;
 }
 
 .form-item label {
     display: inline-block;
+    color: #2B2D42;
+    font-family: 'Prompt', sans-serif;
+    font-weight: bold;
 }
 
 #contact form div:first-child {
@@ -482,12 +562,14 @@ input {
     width: 100%;
     height: 2.5em;
     border-radius: 1em;
+    padding-left: 1em;
 }
 
 #msg {
     width: 100%;
     height: 10em;
     border-radius: 1em;
+    padding: 1em;
 }
 
 .form-item {
@@ -495,60 +577,48 @@ input {
 }
 
 input[type="submit"] {
-    background-color: #FDCA40;
-    color: #2B2D42;
-    margin-left: 6.5em; 
-    margin-bottom: 1em;   
-    width: 50%;
-    height: 2em;
+    background-color: #2B2D42;
+    color: #FDCA40;
     border-radius: 1em;
+    width: 33%;
+    text-align: center;
+    padding-left: 0;
+    position: relative;
+    left: 33%;
 }
 
 /******************************* FOOTER *******************************/
 
-footer {
+ footer {
+    background-color: #F8F4F9;
+    color: #2B2D42;
+    position: relative;
+    top: 5em;
+    text-align: center;
+}
+
+footer p {
+    padding: .5em;
+    font-size: 0.9em;
     background-color: #2B2D42;
-    color: #FF5714;
-    font-size: 0.5em;
-    padding: 2em;
+    color: #F8F4F9;
 }
-
-footer li {
-    margin: 1em;
-}
-
-footer ul {
-    width: 33%;
-    display: inline-block;
-    vertical-align: bottom;
-}
-
-footer div ul {
-    display: inline;
-}
-
-footer div ul:first-child li {
-    display: inline-block;
-    vertical-align: top;
-}
-
-footer a {
-    color: #FF5714;
-}   
 
 #mapa li:first-child a {
-    background: url(./recursos/logo.png) no-repeat;
+    background: url(res/logo.png) no-repeat;
     display: inline-block;
     font-size: 0;
     width: 100px;
     height: 60px;
 }
 
-footer div {
-    display: inline-block;
-    position: absolute;
-    margin: 3em;
-    width: 55%;
+.redes {
+    display: inline-flex;
+}
+
+.redes li {
+    margin: 0 10px;
+    margin-bottom: 10px;
 }
 
 .redes a {
@@ -559,18 +629,17 @@ footer div {
 }
 
 #ig {
-    background-image: url(./recursos/instagram-icon.png);
+    background-image: url(res/instagram-icon.png);
 }
 
 #tw {
-    background-image: url(./recursos/twitter-icon.png);
+    background-image: url(res/twitter-icon.png);
 }
 
 #fb {
-    background-image: url(./recursos/facebook-icon.png);
+    background-image: url(res/facebook-icon.png);
 }
 
-footer p {
-    font-size: 1em;
-    text-align: center;
+.data {
+    display: inline-flex;
 }
