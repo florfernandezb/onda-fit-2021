@@ -2,7 +2,6 @@
     display: inline-block;
     padding-right: 20px;
     font-size: 16px;
-    margin-bottom: 10px;
 }
 
 #open-close a{
@@ -43,6 +42,10 @@ h1 {
     margin-left: 12px;
 }
 
+#gallery h2 {
+    margin-bottom: 0px;
+}
+
 @media screen and (min-width: 1024px) {
     #menu {
         margin-left: 160px;
@@ -54,6 +57,10 @@ h1 {
 
     h1 {
         width: 201px;
+    }
+
+    #only-pc {
+        margin-bottom: 10px;
     }
 }
 
