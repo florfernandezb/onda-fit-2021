@@ -298,6 +298,11 @@ header {
     color: #FDCA40;
 }
 
+@media screen and (max-width: 380px){
+    #main figure p {
+        width: 100%;
+    }
+}
 
 
 #crossfit-content:target .modal, 
@@ -338,6 +343,9 @@ header {
     }
 }
 
+.modal p {
+    color: #2B2D42 !important;
+}
 
 img {
     max-width: 100%;
