@@ -8,9 +8,6 @@
     <!-- Estilos -->
     <link rel="stylesheet" href="css/styles.css">
 
-    <!-- Jquery -->
-    <script src="res/jquery.min.js"></script>
-
     <!-- Tipografías  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,39 +39,43 @@
                 <li><a href="#venues">Sedes</a></li>
                 <li><a href="#contact">Contacto</a></li>
             </ul>
+
         </nav>
     </header>
     <section id="gallery">
         <div>
-
-
             <h2>Mejorá tu calidad de vida</h2>
+            <p id="only-pc">Practicar algun deporte o realizar
+                alguna actividad física aporta
+                muchos beneficios para tu salud,
+                tanto física como mental</p>
             <a href="#about" id="see-more">Ver más</a>
-            <figure>
-                <picture id="banner-1">
-                    <source media="(min-width: 780px)" srcset="res/banner-1-pc.png">
-                    <source media="(min-width: 480px)" srcset="res/banner-1-tablet.png">
-                    <img src="res/banner-1.jpg" alt="Banner ilustración de zanahoria corriendo con pesas">
-                </picture>
-                <figcaption>
-                    Cada vez hay más gente que opta
-                    por la comida healthy. Conocé
-                    nuestros planes de alimentación
-                    para mejorar tu calidad de vida.
-                </figcaption>
-            </figure>
-
-            <picture id="banner-2">
-                <source media="(min-width: 780px)" srcset="res/banner-2-pc.jpg">
-                <source media="(min-width: 480px)" srcset="res/banner-2-tablet.jpg">
-                <img src="res/banner-2.jpg" alt="Banner ilustracion de un brocoli y carne en la cocina">
-            </picture>
-
-            <ul>
-                <li id="next"><a href="#gallery">siguiente</a></li>
-                <li id="previous"><a href="#">anterior</a></li>
-            </ul>
         </div>
+        <figure>
+            <picture id="banner-1">
+                <source media="(min-width: 890px)" srcset="res/pc/banner-1-pc.png">
+                <source media="(min-width: 480px)" srcset="res/tablet/banner-1-tablet.png">
+                <img src="res/banner-1.png" alt="Banner ilustración de zanahoria corriendo con pesas">
+            </picture>
+            <figcaption>
+                Cada vez hay más gente que opta
+                por la comida healthy. Conocé
+                nuestros planes de alimentación
+                para mejorar tu calidad de vida.
+            </figcaption>
+        </figure>
+
+        <picture id="banner-2">
+            <source media="(min-width: 890px)" srcset="res/pc/banner-2-pc.png">
+            <source media="(min-width: 480px)" srcset="res/tablet/banner-2-tablet.png">
+            <img src="res/banner-2.png" alt="Banner ilustracion de un brocoli y carne en la cocina">
+        </picture>
+
+        <ul>
+            <li id="next"><a href="#gallery">siguiente</a></li>
+            <li id="previous"><a href="#">anterior</a></li>
+        </ul>
+
     </section>
 
     <section id="about">
@@ -115,7 +116,7 @@
                 <div id="crossfit-content">
                     <figure>
                         <picture>
-                            <source media="(min-width: 780px)" srcset="">
+                            <source media="(min-width: 780px)" srcset="res/pc/crossfit-web.png">
                             <source media="(min-width: 480px)" srcset="res/tablet/crossfit-tablet.png">
                             <img src="res/crossfit.png" alt="La foto">
                         </picture>
@@ -127,6 +128,7 @@
                         </figcaption>
 
                     </figure>
+                    <div class="pc-style">
                     <p>
                         <span>Ayuda a eliminar grasa.</span>
                         Se trabaja mediante repeticiones que queman grasa de forma rápida. Debe ser acompañado de una
@@ -135,7 +137,9 @@
                     <p>Hacer crossfit <span>ayuda a implementar nuestra resistencia</span> que favorece a una mejor
                         salud cardiovascular. Con ella podremos prevenir afecciones como infartos, colesterol y en
                         general conseguir una mejor calidad y salud para nuestra circulación.</p>
-                    <a href="#crossfit-content">Ver más</a>
+                        <a href="#crossfit-content">Ver más</a>
+                    </div>
+                    
 
                     <div class="modal">
                         <div class="modal-content">
@@ -171,8 +175,8 @@
                 <div id="functional-content">
                     <figure>
                         <picture>
-                            <source media="(min-width: 780px)" srcset="">
-                            <source media="(min-width: 480px)" srcset="">
+                            <source media="(min-width: 780px)" srcset="res/pc/functional-web.png">
+                            <source media="(min-width: 480px)" srcset="res/pc/functional-tablet.png">
                             <img src="res/functional.png" alt="La foto">
                         </picture>
                         <figcaption>
@@ -184,15 +188,18 @@
                         </figcaption>
 
                     </figure>
-                    <p>
-                        Prioriza el movimiento
-                        La intensidad con la que se trabaja le da al cuerpo <span>mayor agilidad y resistencia.</span>
-                        ¿El resultado?
-                        Sentirse mejor. ¡Sin dudas es una excelente opción!
-                    </p>
-                    <p><span>Potencia la coordinación y equilibrio.</span>Al trabajar conjuntamente todos los grupos
-                        musculares las habilidades motrices mejoran considerablemente.</p>
-                    <a href="#functional-content">Ver más</a>
+                    <div class="pc-style">
+                        <p>
+                            Prioriza el movimiento
+                            La intensidad con la que se trabaja le da al cuerpo <span>mayor agilidad y resistencia.</span>
+                            ¿El resultado?
+                            Sentirse mejor. ¡Sin dudas es una excelente opción!
+                        </p>
+                        <p><span>Potencia la coordinación y equilibrio.</span>Al trabajar conjuntamente todos los grupos
+                            musculares las habilidades motrices mejoran considerablemente.</p>
+                        <a href="#functional-content">Ver más</a>
+                    </div>
+                    
 
                     <div class="modal">
                         <div class="modal-content">
@@ -244,6 +251,7 @@
                         </figcaption>
 
                     </figure>
+                    <div class="pc-style">
                     <p>
                         <span>Los ejercicios aeróbicos incrementan el nivel de energía y aumentan la capacidad de
                             resistencia </span>
@@ -257,6 +265,8 @@
                             peso ideal.</span>
                     </p>
                     <a href="#cardio-content">Ver más</a>
+                </div>
+                    
 
                     <div class="modal">
                         <div class="modal-content">
@@ -391,15 +401,16 @@
                 <li><a href="#info">Consejos</a></li>
                 <li><a href="#venues">Sedes</a></li>
             </ul>
-            
+
             <ul class="redes">
                 <li><a id="ig" href="https://www.instagram.com/" target="_blank">Instagram</a></li>
                 <li><a target="_blank" id="tw" href="https://www.twitter.com/">Twitter</a></li>
                 <li><a target="_blank" id="fb" href="https://www.facebook.com/">Facebook</a></li>
             </ul>
-            <p>| Florencia Fernández Bugna | DWN2A | 2021 |</p>
+            
 
         </div>
+        <p>| Florencia Fernández Bugna | DWN2A | 2021 |</p>
         <p>&copy; Este sitio es una entrega para la Escuela Da Vinci</p>
     </footer>
 </body>

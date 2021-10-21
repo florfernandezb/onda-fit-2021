@@ -1,0 +1,191 @@
+#only-pc {
+    display: inline-block;
+    padding-right: 20px;
+    font-size: 16px;
+}
+
+#open-close a{
+    display: none;
+}
+
+#gallery {
+    max-width: 100%;
+}
+
+#gallery div {
+    width: 280px;
+}
+
+#nav div {
+    right: 40px;
+}
+
+#open-close {
+    display: none;
+}
+
+h1 {
+    display: inline-flex;
+    vertical-align: bottom;
+    width: 33%;
+}
+
+#nav {
+    display: inline-flex;
+    vertical-align: bottom;
+    margin-right: 40px;
+}
+
+#nav li {
+    display: inline-block;
+    margin-bottom: calc(186px / 2);
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+    #menu {
+        margin-left: 238px;
+    }
+
+    h1 {
+        width: 201px;
+    }
+}
+
+#about {
+    width: 100%;
+}
+
+#about li {
+    display: flex;
+    position: relative;
+}
+
+#about ul li p {
+    position: absolute;
+    text-align: left;
+    width: 50%;
+    margin: auto;
+    right: 8em;
+    top: 4em;
+}
+
+#about ul:first-of-type li:first-child h3 {
+    margin: auto;
+    border-top: 0em solid transparent;
+    border-left: 0em solid transparent;
+    height: 137px;
+    background-position: 3em 0em;
+    width: 100%;
+    
+}
+
+#sueno h3 {
+    margin: auto;
+    border-top: 0em solid transparent;
+    border-left: 0em solid transparent;
+    height: 137px;
+    background-position: 3em 0em;
+    width: 100%;
+}
+
+#about ul:first-of-type li:last-child h3 {
+    margin: auto;
+    border-top: 0em solid transparent;
+    border-left: 0em solid transparent;
+    height: 137px;
+    background-position: 3em 0em;
+    width: 100%;
+}
+
+#main {
+    top: 10em;
+}
+
+#main figure {
+    float: right;
+    padding: 0 2em;
+}
+
+.pc-style p {
+    display: block;
+    width: 50%;
+    text-align: left;
+    padding: 1em;
+}
+
+.modal {
+    display: inline-block;
+    padding: 0 !important;
+}
+
+#main figure p, .modal a, .pc-style a {
+    display: none;
+}
+
+#main p {
+    text-align: left;
+}
+
+#main article div {
+    padding: 0 1em;
+}
+
+#main p {
+    padding: 1em 0;
+}
+
+#main h4 {
+    left: calc((371px - 120px) / 2);
+}
+
+#video {
+    margin-top: 7em;
+}
+
+.card, .card:target {
+    width: 30%;
+    opacity: 1;
+    display: inline-block;
+    position: unset;
+    vertical-align: bottom;
+    height: calc(312px + 4em);
+}
+
+.nutrition-gallery {
+    display: none;
+}
+
+#mapa, #redes{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#mapa li:first-child {
+    float: left;
+    margin-top: 0;
+}
+
+#mapa li {
+    text-align: right;
+    line-height: 0;
+    display: inline-block;
+    font-size: .9em;
+    margin: 0 5px;
+    padding: 0;
+    margin-top: calc(143px / 2);
+}
+
+footer ul {
+    vertical-align: middle;
+}
+
+.redes li {
+    margin: 0 10px;
+    height: 50px;
+}
+
+footer div:first-child {
+    padding: 1em;
+}
+

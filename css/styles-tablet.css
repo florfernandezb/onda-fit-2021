@@ -18,33 +18,24 @@ p, a, label {
     font-size: 1.1em;
 }
 
+#gallery div {
+    top: 11em;
+    margin-left: 40px;
+}
+
 #gallery h2 {
     width: 300px;
-    position: absolute;
-    top: calc(186px + 80px / 2);
-    left: 40px;
 }
 
 #see-more {
     width: 140px;
-    position: absolute;
-    top: calc(186px + 120px + 26px);
-    left: 40px;
 }
 
 @media screen and (max-width: 740px) {
-    #gallery h2 {
-        width: 235px;
-        top: 160px;
-        font-size: 1.3em;
-        left: 20px;
-    }
 
-    #see-more {
-        font-size: 1em;
-        width: 100px;
-        top: 250px;
-        left: 20px;
+    #gallery div {
+        top: 9em;
+        margin-left: 20px;
     }
 
     h1 {
@@ -134,8 +125,8 @@ footer p {
     font-size: 1em !important;
 }
 
-#about h3 {
-    border-top: 7em solid transparent !important;
+#about ul:first-of-type li:first-child h3, #sueno h3, #about ul:first-of-type li:last-child h3 {
+    border-top: 7em solid transparent
 }
 
 .redes li {
