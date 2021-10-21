@@ -31,6 +31,14 @@ p, a, label {
     width: 140px;
 }
 
+#main figure p {
+    width: 45%;
+}
+
+#main figcaption {
+    width: 100%;
+}
+
 @media screen and (max-width: 740px) {
 
     #gallery div {
@@ -41,6 +49,11 @@ p, a, label {
     h1 {
         margin: 20px;
     }
+
+    #main figure p {
+        width: 70%;
+    }
+    
 }
 
 #venues p {
@@ -138,7 +151,7 @@ footer p {
 }
 
 #body:target #menu {
-    top: 186px;
+    top: 150px;
 }
 
 .class-gallery a {
@@ -153,3 +166,7 @@ footer p {
 .class-gallery a:hover {
     background: url(../res/tablet/yellowCircleLight-tablet.png) no-repeat;
 }
+
+/* #main figure p {
+    width: 45%;
+} */

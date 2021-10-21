@@ -39,12 +39,16 @@ h1 {
 #nav li {
     display: inline-block;
     margin-bottom: calc(186px / 2);
-    margin-left: 10px;
+    margin-left: 12px;
 }
 
 @media screen and (min-width: 1024px) {
     #menu {
-        margin-left: 238px;
+        margin-left: 160px;
+    }
+
+    #nav li {
+        margin-left: 25px;
     }
 
     h1 {
@@ -189,3 +193,6 @@ footer div:first-child {
     padding: 1em;
 }
 
+#main figcaption {
+    width: unset;
+}
