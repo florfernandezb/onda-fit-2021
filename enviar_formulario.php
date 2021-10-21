@@ -2,7 +2,7 @@
 $enviaPara = 'florencia.fernandezb@davinci.edu.ar'; 
 $subject = 'Contacto desde la web'; 
 
-$enviado="enviado.html";
+$enviado="gracias.html";
 
 $mensaje = '';
 $primero = true;

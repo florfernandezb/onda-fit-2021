@@ -254,7 +254,7 @@ header {
 
 /* ****************************************** CLASS ****************************************** */
 
-main {
+#main {
     display: block;
 }
 
@@ -267,13 +267,13 @@ main {
     border-radius: 1em;
 }
 
-main h2, main h3 {
+#main h2, main h3 {
     color: #FDCA40;
     text-align: center;
     padding: 10px 0;
 }
 
-main figcaption h4{
+#main figcaption h4{
     position: relative;
     margin: auto;
     color: #FDCA40;
@@ -343,13 +343,13 @@ img {
     max-width: 100%;
 }
 
-main p {
+#main p {
     padding: 1em;
     text-align: center;
     color: #FDCA40;
 }
 
-main article a {
+#main article a {
     color: #FF5714;
     float: right;
     padding-right: 2em;
@@ -671,4 +671,11 @@ footer p {
 
 .data {
     display: inline-flex;
+}
+
+#thk {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 2em;
 }
